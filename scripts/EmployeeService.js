@@ -1,5 +1,5 @@
 const getElement = document.querySelector("#get_services");
-const getURL = "http://localhost:3000/employees/1";
+const getURL = "http://localhost:3000/employees/";
 makePromiseCall("GET", getURL, true)
     .then(responseText => {
         getElement.textContent = "Get User Data: " + responseText;
